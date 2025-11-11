@@ -19,16 +19,24 @@
 //object desrructing
 // array destructuring
 
-const user = {
-  id: 111,
-  name: {
-    firstName: "abul",
-    lastName: "babul",
-  },
-  gender: "male",
-  color: "samla",
-};
+// const user = {
+//   id: 111,
+//   name: {
+//     firstName: "abul",
+//     lastName: "babul",
+//   },
+//   gender: "male",
+//   color: "samla",
+// };
 
-const myFavouriteColor = user?.color ?? "white";
+// const myFavouriteColor = user?.color ?? "white";
 
-const { name } = user;
+// const { name } = user;
+
+// Generic Function
+// const createArrayWithString = (value: string) => value;
+// const createArrayWithString = (value: ) => value;
+
+const createArrywithGeneric=<T>(value<T>)=>{
+  return [value]
+}
