@@ -56,14 +56,27 @@
 // const myVehicle: myVehicle1 = "bike";
 
 // asconst assangtion
-const UserRoles = {
-  Admin: "Admin",
-  User: "User",
-  Guest: "Guest",
-} as const;
+// const UserRoles = {
+//   Admin: "Admin",
+//   User: "User",
+//   Guest: "Guest",
+// } as const;
 
-// this is now freekded up
-// UserRoles.Admin = "SuperAdmin";
+// // this is now freekded up
+// // UserRoles.Admin = "SuperAdmin";
 
-// 1.typeof operator
-// 2.keyof operator
+// // 1.typeof operator
+// // 2.keyof operator
+// const user={
+//   id:222,
+//   name:"Fahim",
+// }
+
+// typeof user;
+
+//Conditional type : je type condition er upor depend kore
+
+type A = null;
+type B = undefined;
+
+type C = A extends null ? true : false;
