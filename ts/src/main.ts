@@ -37,6 +37,33 @@
 // const createArrayWithString = (value: string) => value;
 // const createArrayWithString = (value: ) => value;
 
-const createArrywithGeneric=<T>(value<T>)=>{
-  return [value]
-}
+// const createArrywithGeneric=<T>(value:T)=>{
+//   return [value]
+// }
+
+//constrain : stric rules deya
+
+// keyof : type operator
+
+// type RichPeopleVehicle = {
+//   car: string;
+//   bike: string;
+//   cng: string;
+// };
+
+// type myVehicle = "bike" | "car" | "cng";
+// type myVehicle1 = keyof RichPeopleVehicle;
+// const myVehicle: myVehicle1 = "bike";
+
+// asconst assangtion
+const UserRoles = {
+  Admin: "Admin",
+  User: "User",
+  Guest: "Guest",
+} as const;
+
+// this is now freekded up
+// UserRoles.Admin = "SuperAdmin";
+
+// 1.typeof operator
+// 2.keyof operator
