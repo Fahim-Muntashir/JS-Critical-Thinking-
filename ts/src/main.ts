@@ -84,19 +84,53 @@
 
 // 1 Declare variables with proper primitive types (string, number, boolean, null, undefined).
 
-let userName: string = "John Doe";
-let age: number = 30;
-let isStudent: boolean = false;
-let address: null = null;
-let phoneNumber: undefined = undefined;
+// let userName: string = "John Doe";
+// let age: number = 30;
+// let isStudent: boolean = false;
+// let address: null = null;
+// let phoneNumber: undefined = undefined;
 
-// /Create an array of numbers and find the average using a typed variable.
+// /2 Create an array of numbers and find the average using a typed variable.
 
-const numbers: number[] = [10, 20, 30, 40, 50];
+// const numbers: number[] = [10, 20, 30, 40, 50];
+// let sum: number = 0;
+// for (let num of numbers) {
+//   sum += num;
+// }
+// console.log(`Average: ${sum / numbers.length}`);
 
-let sum: number = 0;
-for (let num of numbers) {
-  sum += num;
-}
+// const numbers: Array<number> = [10, 20, 30, 40, 50];
 
-console.log(`Average: ${sum / numbers.length}`);
+// let sum: number = 0;
+
+// for (let num of numbers) {
+//   sum += num;
+// }
+
+// console.log(`Average: ${sum / numbers.length}`);
+
+// 3. Define a tuple that holds a person’s name (string), age (number), and active status (boolean).
+
+// const person: [string, number, boolean] = ["Alice", 28, true];
+// console.log(`Name: ${person[0]}, Age: ${person[1]}, Active: ${person[2]}`);
+
+// //4 Create an object type for a user having name, email, and optional phone.
+
+// interface User {
+//   name: string;
+//   email: string;
+//   phone?: null;
+// }
+
+// const user: User = {
+//   name: "Bob",
+//   email: "bop@gmial.com",
+//   phone: null,
+// };
+
+//5 Write a function that takes two numbers and returns their sum (with proper type annotation).
+const sum = (num1: number, num2: number): number => {
+  return num1 + num2;
+};
+
+console.log(`Sum: ${sum(5, 10)}`);
