@@ -129,8 +129,84 @@
 // };
 
 //5 Write a function that takes two numbers and returns their sum (with proper type annotation).
-const sum = (num1: number, num2: number): number => {
-  return num1 + num2;
-};
+// const sum = (num1: number, num2: number): number => {
+//   return num1 + num2;
+// };
 
-console.log(`Sum: ${sum(5, 10)}`);
+// console.log(`Sum: ${sum(5, 10)}`);
+
+//6. Write a function that accepts an unknown value and checks if it’s a string before returning its length.
+
+// const person = (value: unknown): number | null => {
+//   if (typeof value === "string") {
+//     return value.length;
+//   } else {
+//     return null;
+//   }
+// };
+
+// console.log(person("Hello World"));
+
+// 7. Use rest and spread operators to merge two arrays of numbers.
+
+// const array1: number[] = [1, 2, 3];
+// const array2: number[] = [4, 5, 6];
+// const mergedArray: number[] = [...array1, ...array2];
+// console.log(mergedArray);
+
+// const functions = (...age: number[]): number => {
+//   return age.reduce((a, b) => a + b, 0);
+// };
+
+// console.log(functions(10, 20, 30, 40, 50));
+
+//Destructure the following object safely:
+
+// const person = { name: "Fahim", info: { age: 22, country: "Bangladesh" } };
+// // Extract age using destructuring
+
+// const age = person.info?.age;
+// console.log(`Age: ${age}`);
+
+//Create a type alias called Product with properties id, name, price, and optional discount.
+// type Porduct = {
+//   id: number;
+//   name: string;
+//   price: number;
+//   discount?: number;
+// };
+
+// const ProductPinabelle: Porduct = {
+//   id: 1,
+//   name: "Pinabelle",
+//   price: 5000,
+// };
+
+//10. Define a union type for a variable that can store either a string (user’s name) or a number (user’s ID).
+
+// type UserIdentifier = string | number;
+
+// const user: UserIdentifier = "Fahim";
+
+// 11. Write a function that uses a ternary operator to check if a number is even or odd.
+
+// const checkEvenOdd = (num: number): string => {
+//   const result = num % 2 === 0 ? "Even" : "Odd";
+//   return result;
+// };
+
+// console.log(checkEvenOdd(7));
+
+//12. Use nullish coalescing (??) to give a default value when a variable is null or undefined.
+
+// const userColor: string | null = null;
+// const favoriteColor: string = userColor ?? "Blue";
+// console.log(`Favorite Color: ${favoriteColor}`);
+
+// 13.Write a function that never returns (throws an error).
+
+// const throwError = (message: string): never => {
+//   throw new Error(message);
+// };
+
+// console.log(throwError("This is a fatal error"));
