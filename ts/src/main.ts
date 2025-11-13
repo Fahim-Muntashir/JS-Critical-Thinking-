@@ -210,3 +210,82 @@
 // };
 
 // console.log(throwError("This is a fatal error"));
+// 14. Create an interface called User with fields id, name, email, and an optional role.
+
+// interface User {
+//   id: number;
+//   name: string;
+//   email: string;
+//   role?: string;
+// }
+
+// 15 .Extend that interface into an Admin interface with extra property permissions: string[].
+// interface User {
+//   name: string;
+//   email: string;
+//   phone?: string | null;
+// }
+
+// // Extend User to Admin
+// interface Admin extends User {
+//   permissions: string[];
+// }
+
+// // Example of an Admin object
+// const adminUser: Admin = {
+//   name: "Fahim",
+//   email: "fahim@example.com",
+//   permissions: ["read", "write", "delete"],
+// };
+
+// console.log(adminUser);
+
+//16. Create a generic function that takes any value and returns it.
+
+// function identity<T>(value: T): T {
+//   // your code
+//   return value;
+// }
+
+// console.log(identity<string>("Hello TypeScript"));
+// console.log(identity<number>(42));
+// console.log(identity<boolean>(true));
+
+//17. Define a generic interface for a key-value pair.
+//18. Create a generic interface called Box<T> that holds a value of type T.
+
+interface Box<T> {
+  value: T;
+}
+
+//19; Write a generic function that takes an array and returns its first element.
+
+//20. Add a constraint: only accept arrays that contain elements with a length property.
+
+// Create a keyof generic function that returns a property value from an object safely.
+
+// function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
+//    // your code
+// }
+
+// 🧩 Level 4 (Enums, Conditional & Utility Types)
+
+// Create an enum for user roles: ADMIN, EDITOR, VIEWER.
+
+// Replace that enum with a const object and use as const to achieve the same behavior.
+
+// Use a conditional type to check if a type extends string.
+
+// type CheckType<T> = T extends string ? "String" : "Not String";
+
+// Create a mapped type that makes all fields of a User type optional.
+
+// Use utility types:
+
+// Partial<User>
+
+// Pick<User, "name" | "email">
+
+// Omit<User, "id">
+
+// Readonly<User>
