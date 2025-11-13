@@ -76,7 +76,27 @@
 
 //Conditional type : je type condition er upor depend kore
 
-type A = null;
-type B = undefined;
+// type A = null;
+// type B = undefined;
 
-type C = A extends null ? true : false;
+// type C = A extends null ? true : false;
+// map type
+
+// 1 Declare variables with proper primitive types (string, number, boolean, null, undefined).
+
+let userName: string = "John Doe";
+let age: number = 30;
+let isStudent: boolean = false;
+let address: null = null;
+let phoneNumber: undefined = undefined;
+
+// /Create an array of numbers and find the average using a typed variable.
+
+const numbers: number[] = [10, 20, 30, 40, 50];
+
+let sum: number = 0;
+for (let num of numbers) {
+  sum += num;
+}
+
+console.log(`Average: ${sum / numbers.length}`);
