@@ -1,0 +1,17 @@
+//oop - class - object
+
+class Animal {
+  name: string;
+  species: string;
+  sound: string;
+
+  constructor(name: string, species: string, sound: string) {
+    this.name = name;
+    this.species = species;
+    this.sound = sound;
+  }
+}
+
+const dog = new Animal("German Shepherd", "Dog", "Bark");
+
+console.log(dog);
