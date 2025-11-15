@@ -22,13 +22,13 @@
 // const cat = new Animal("Persian", "Cat", "Meow");
 // console.log(cat.makeSound());
 
-class Parent {
-  getSleep(numOfHours: number) {
-    {
-      numOfHours;
-    }
-  }
-}
+// class Parent {
+//   getSleep(numOfHours: number) {
+//     {
+//       numOfHours;
+//     }
+//   }
+// }
 
 // class Student {
 //   name: string;
@@ -78,16 +78,16 @@ class Parent {
 
 //in typeof
 
-const add = (num1: number | string, num2: number | string) => {
-  if (typeof num1 === "number" && typeof num2 === "number") {
-    return num1 + num2;
-  } else {
-    num1.toString() + num2.toString;
-  }
-};
+// const add = (num1: number | string, num2: number | string) => {
+//   if (typeof num1 === "number" && typeof num2 === "number") {
+//     return num1 + num2;
+//   } else {
+//     num1.toString() + num2.toString;
+//   }
+// };
 
-add(2, 2);
-add(2, "2");
+// add(2, 2);
+// add(2, "2");
 
 //in guard
 
@@ -105,3 +105,74 @@ add(2, "2");
 // };
 
 // getUserInfo({ name: "Normal" });
+
+//oop : instance of type guard /type narrowing
+
+// class Person {
+//   name: string;
+//   constructor(name: string) {
+//     this.name = name;
+//   }
+
+//   getSleep(numOfHours: number) {
+//     console.log(`${this.name} doinik ${numOfHours} ghonta ghum kore`);
+//   }
+// }
+
+// class Student extends Person {
+//   constructor(name: string) {
+//     super(name);
+//   }
+
+//   doStudy(numOfHours: number) {
+//     console.log(`${this.name} doinik ${numOfHours} ghonta study kore`);
+//   }
+// }
+
+// class Teacher extends Person {
+//   constructor(name: string) {
+//     super(name);
+//   }
+//   takeClass(numOfHours: number) {
+//     console.log(`${this.name} doinik ${numOfHours} ghonta class ney kore`);
+//   }
+// }
+
+// const getUserInfo = (user: Person) => {
+//   if (user instanceof Student) {
+//     user.doStudy(10);
+//   } else if (user instanceof Teacher) {
+//     user.takeClass(2);
+//   } else {
+//     user.getSleep(14);
+//   }
+// };
+
+// const student1 = new Student("Mr,student");
+// const teacher1 = new Teacher("Mr Teacher");
+
+// getUserInfo(student1);
+
+// //access >> modify
+// class BankAccount {
+//   userId: number;
+//   userName: string;
+//   userBalance: number;
+
+//   constructor(userId: number, userName: string, userBalance: number) {
+//     this.userId = userId;
+//     this.userName = userName;
+//     this.userBalance = userBalance;
+//   }
+// }
+
+// const mezbaBhaiAccount = new BankAccount(111, "mezba", 20);
+
+// mezbaBhaiAccount.userId = 222;
+
+// Getter and Setter
+
+//oop abstraction
+
+//idea
+//implementation pore korbo
