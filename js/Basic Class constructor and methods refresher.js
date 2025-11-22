@@ -3,6 +3,7 @@
 //     this.count = this.count;
 //   }
 // }
+
 class Stack {
   constructor(size) {
     this.stack = new Array(size);

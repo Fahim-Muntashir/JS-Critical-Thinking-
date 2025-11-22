@@ -278,7 +278,7 @@ interface Box<T> {
 
 // type CheckType<T> = T extends string ? "String" : "Not String";
 
-// Create a mapped type that makes all fields of a User type optional.
+// Create a mapped type that makes all fields of a User type optional
 
 // Use utility types:
 
